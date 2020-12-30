@@ -1,17 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-  int arr[10],i;
-  cout<<"Enter any ten number\n";
+    int n;
+    cout<<"Enter the range : ";
+    cin>>n;
+    int counter=1,sum=0;
+    for(counter=1;counter<=n;counter++){
+      sum=sum+counter;
+    }
+    cout<<"Sum is = "<<sum;
 
-  for(i=0;i<10;i++){
-    cout<<"Element "<<i+1<<" = ";
-    cin>>arr[i];
-  }
-  int sum=0;
-  for(i=0;i<10;i++){
-    sum=sum+arr[i];
-  }
-  cout<<"Sum is "<<sum<<endl;
-    return 0;
+    sum=0,counter=1;
+    while(counter<=n){
+      sum=sum+counter;
+      counter++;
+    }
+    cout<<"\nSum is = "<<sum;
+      return 0;
 }
