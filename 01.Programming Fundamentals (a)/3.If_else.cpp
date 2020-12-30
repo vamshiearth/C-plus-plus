@@ -15,17 +15,18 @@ int main(){
   if(a>b){
     if(a>c){
       cout<<a<<" is the greater number";
-      flag=1;
     }
+    else{
+        cout<<c<<" is the greater number";
+      }
   }
-  if(b>a){
-    if(b>c){
-      cout<<b<<" is greater number";
-      flag=1;
-    }
-  }
-  if(flag=0){
-    cout<<c<<" is greater number";
+  else{
+      if(b>c){
+        cout<<b<<" is the greater number";
+      }
+      else{
+        cout<<c<<" is the greater number";
+      }
   }
   return 0;
 }
